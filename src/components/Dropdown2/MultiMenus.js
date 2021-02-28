@@ -64,13 +64,12 @@ const MultiMenus = ({ menus }) => {
   const ListMenu = ({ dept, data, hasSubMenu, menuName, menuIndex }) => (
     <LI>
       <Item dept={dept}>
-        <Label onClick={() => handleMenuClick(data)}>{data.label} </Label>
-        {hasSubMenu && (
-          <Arrow
-            onClick={() => handleArrowClick(menuName)}
-            toggle={activeMenus.includes(menuName)}
-          />
-        )}
+          <div onClick={() => handleArrowClick(menuName)} toggle={activeMenus.includes(menuName)}>
+            <Label onClick={() => handleMenuClick(data)}>{data.label} </Label>
+          </div>
+        { hasSubMenu&& (
+          <Arrow onClick={() => handleArrowClick(menuName)} toggle={activeMenus.includes(menuName)}/> 
+          )} 
       </Item>
       {hasSubMenu && (
         <SubMenu
