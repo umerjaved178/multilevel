@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.ListElement {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 0;
+    border-bottom: rgb(185, 185, 185) 1px solid;
+    cursor: pointer;
+}
