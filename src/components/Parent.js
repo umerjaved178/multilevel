@@ -5,29 +5,26 @@ import List from './List/List';
 
 
 function Parent() {
-    const [category, setcategory] = useState( {
-        "chuss1":{
-        'dropped': false,
-          label: "Menu 1"
+    const [category, setcategory] = useState( [
+        {
+          label: "category_1"
         },
-        "chuss2":{
-          'dropped': false,
-          label: "Menu 2",
+        {
+          label: "category_2",
           submenu: [
             {
-              label: "Sub Menu 1"
+              label: 'Sub category 2-A'
             },
             {
-              label: "Sub Menu 2"
+              label: "Sub category 2-A"
             }
           ]
         },
-        "chuss3":{
-            'dropped': false,
-          label: "Menu 3",
+        {
+          label: "category_3",
           submenu: [
             {
-              label: "Sub Menu 1",
+              label: "Sub category 3-A",
               submenu: [
                 {
                   label: "Boom 1"
@@ -38,7 +35,7 @@ function Parent() {
               ]
             },
             {
-              label: "Sub Menu 2",
+              label:"Sub category 3-B",
               submenu: [
                 {
                   label: "Deep 1"
@@ -62,10 +59,7 @@ function Parent() {
               ]
             },
             {
-              label: "Sub Menu 3"
-            },
-            {
-              label: "Sub Menu 4",
+              label: "Sub category 3-C",
               submenu: [
                 {
                   label: "Last 1"
@@ -80,7 +74,7 @@ function Parent() {
             }
           ]
         }
-    })
+    ])
    
     // {
     //     'category_1': {
