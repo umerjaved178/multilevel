@@ -12,6 +12,7 @@ const Item = styled.div`
   padding: 12px 18px;
   padding-left: ${props => `${props.dept * 18}px`};
   align-items: center;
+  border-bottom: 1px solid #bfbfbf;
 `;
 const Label = styled.span`
   width: 100%;
@@ -63,22 +64,24 @@ const MultiMenus = ({ menus }) => {
 
   const ListMenu = ({ dept, data, hasSubMenu, menuName, menuIndex }) => (
     <LI>
-      <Item dept={dept}>
-          <div onClick={() => handleArrowClick(menuName)} toggle={activeMenus.includes(menuName)}>
-            <Label onClick={() => handleMenuClick(data)}>{data.label} </Label>
-          </div>
-        { hasSubMenu&& (
-          <Arrow onClick={() => handleArrowClick(menuName)} toggle={activeMenus.includes(menuName)}/> 
-          )} 
-      </Item>
-      {hasSubMenu && (
-        <SubMenu
-          dept={dept}
-          data={data.submenu}
-          toggle={activeMenus.includes(menuName)}
-          menuIndex={menuIndex}
-        />
-      )}
+        <div onClick={() => handleArrowClick(menuName)} toggle={activeMenus.includes(menuName)}>
+            <Item dept={dept}>
+                <div style={{'display':'inline-block', 'margin': 'auto'}} >
+                    <Label onClick={() => handleMenuClick(data)}>{data.label} </Label>
+                </div>
+                { hasSubMenu&& (
+                <Arrow/> 
+                )} 
+            </Item>
+            {hasSubMenu && (
+                <SubMenu
+                dept={dept}
+                data={data.submenu}
+                toggle={activeMenus.includes(menuName)}
+                menuIndex={menuIndex}
+                />
+            )}
+        </div>
     </LI>
   );
 
