@@ -1,0 +1,17 @@
+.AddButton {
+  cursor: pointer;
+  background: #1caeb6;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0px 300px;
+  margin: 25px;
+}
+
+.AddButton:hover {
+  background: #2ad2db;
+}
+
+.AddButton:active {
+  background: #218c92;
+}

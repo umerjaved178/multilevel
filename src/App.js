@@ -1,13 +1,12 @@
-import './App.css';
-import Layout from './components/Layout/Layout';
-import Parent from './components/Parent';
-
+import "./App.css";
+import Layout from "./components/Layout/Layout";
+import Parent from "./components/Parent";
 
 function App() {
-  return ( 
+  return (
     <div className="App">
       <Layout>
-        <Parent/>
+        <Parent />
       </Layout>
     </div>
   );

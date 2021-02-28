@@ -26,6 +26,7 @@ const Arrow = styled.span`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  opacity:  ${props => (props.transparent? "0" : "1")};
 
   &::after {
     content: "";
@@ -69,19 +70,17 @@ const MultiMenus = ({ menus }) => {
                 <div style={{'display':'inline-block', 'margin': 'auto'}} >
                     <Label onClick={() => handleMenuClick(data)}>{data.label} </Label>
                 </div>
-                { hasSubMenu&& (
-                <Arrow/> 
-                )} 
+                { hasSubMenu ? (<Arrow transparent={false}/>) : (<Arrow transparent={true}/>) } 
             </Item>
-            {hasSubMenu && (
-                <SubMenu
-                dept={dept}
-                data={data.submenu}
-                toggle={activeMenus.includes(menuName)}
-                menuIndex={menuIndex}
-                />
-            )}
         </div>
+        {hasSubMenu && (
+            <SubMenu
+            dept={dept}
+            data={data.submenu}
+            toggle={activeMenus.includes(menuName)}
+            menuIndex={menuIndex}
+            />
+        )}
     </LI>
   );
 
@@ -91,9 +90,10 @@ const MultiMenus = ({ menus }) => {
     }
 
     dept = dept + 1;
-
+    
     return (
       <UL>
+        
         {data.map((menu, index) => {
           const menuName = `sidebar-submenu-${dept}-${menuIndex}-${index}`;
 
