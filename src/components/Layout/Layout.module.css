@@ -4,3 +4,31 @@
   margin: 0;
   color: white;
 }
+
+.Header h1 {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+.Header h2 {
+  padding: 10px 20px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  float: right;
+  margin-right: 25px;
+  margin-top: 30px;
+}
+
+.Header h2:hover {
+  background-color: rgb(163, 163, 163);
+}
+
+.Header h2:active {
+  background-color: rgb(116, 114, 114);
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+}

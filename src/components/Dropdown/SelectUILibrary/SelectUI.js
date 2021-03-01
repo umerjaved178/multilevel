@@ -12,6 +12,7 @@ export default function Selection(props) {
         options={props.options}
         className="basic-multi-select"
         classNamePrefix="select"
+        onChange={props.handletempDataChange}
         hideSelectedOptions={false}
         theme={(theme) => ({
           ...theme,

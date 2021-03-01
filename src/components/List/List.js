@@ -15,7 +15,9 @@ function List(props) {
 
             {props.category[singleCategory].dropped ? (
               <SelectionComp
+                handletempDataChange={props.handletempDataChange}
                 options={props.category[singleCategory].subCategory}
+                storeResult={props.storeResult}
               />
             ) : null}
           </div>

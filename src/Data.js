@@ -87,49 +87,61 @@ export const data = {
   "Electric Actuators": {
     dropped: false,
     subCategory: [
-      { label: "Sub category 2-A", value: "Sub category 2-A" },
-      { label: "Sub category 2-B", value: "Sub category 2-B" },
-      { label: "Sub category 2-C", value: "Sub category 2-C" },
+      { label: "Electric Actuators 2-A", value: "Electric Actuators 2-A" },
+      { label: "Electric Actuators 2-B", value: "Electric Actuators 2-B" },
+      {
+        label: "Electric Actuatorscategory 2-C",
+        value: "Electric Actuators 2-C",
+      },
     ],
   },
   "Laser Lights": {
     dropped: false,
     subCategory: [
-      { label: "Sub category 2-A", value: "Sub category 2-A" },
-      { label: "Sub category 2-B", value: "Sub category 2-B" },
-      { label: "Sub category 2-C", value: "Sub category 2-C" },
+      { label: "Laser Lights 2-A", value: "Laser Lights 2-A" },
+      { label: "Laser Lights 2-B", value: "Laser Lights 2-B" },
+      { label: "Laser Lights 2-C", value: "Laser Lights 2-C" },
     ],
   },
   "Industrial Automation": {
     dropped: false,
     subCategory: [
-      { label: "Sub category 2-A", value: "Sub category 2-A" },
-      { label: "Sub category 2-B", value: "Sub category 2-B" },
-      { label: "Sub category 2-C", value: "Sub category 2-C" },
+      {
+        label: "Industrial Automation 2-A",
+        value: "Industrial Automation 2-A",
+      },
+      {
+        label: "Industrial Automation 2-B",
+        value: "Industrial Automation 2-B",
+      },
+      {
+        label: "Industrial Automation 2-C",
+        value: "Industrial Automation 2-C",
+      },
     ],
   },
   "Robotic Arms": {
     dropped: false,
     subCategory: [
-      { label: "Sub category 2-A", value: "Sub category 2-A" },
-      { label: "Sub category 2-B", value: "Sub category 2-B" },
-      { label: "Sub category 2-C", value: "Sub category 2-C" },
+      { label: "Robotic Arms 2-A", value: "Robotic Arms 2-A" },
+      { label: "Robotic Arms 2-B", value: "Robotic Arms 2-B" },
+      { label: "Robotic Arms 2-C", value: "Robotic Arms 2-C" },
     ],
   },
   "Production Enery": {
     dropped: false,
     subCategory: [
-      { label: "Sub category 2-A", value: "Sub category 2-A" },
-      { label: "Sub category 2-B", value: "Sub category 2-B" },
-      { label: "Sub category 2-C", value: "Sub category 2-C" },
+      { label: "Production Enery 2-A", value: "Production Enery 2-A" },
+      { label: "Production Enery 2-B", value: "Production Enery 2-B" },
+      { label: "Production Enery 2-C", value: "Production Enery 2-C" },
     ],
   },
   "Sensors Multilevel": {
     dropped: false,
     subCategory: [
-      { label: "Sub category 2-A", value: "Sub category 2-A" },
-      { label: "Sub category 2-B", value: "Sub category 2-B" },
-      { label: "Sub category 2-C", value: "Sub category 2-C" },
+      { label: "Sensors Multilevel 2-A", value: "Sensors Multilevel 2-A" },
+      { label: "Sensors Multilevel 2-B", value: "Sensors Multilevel 2-B" },
+      { label: "Sensors Multilevel 2-C", value: "Sensors Multilevel 2-C" },
     ],
   },
 };

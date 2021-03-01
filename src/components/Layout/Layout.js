@@ -3,9 +3,9 @@ import classes from "./Layout.module.css";
 
 function Layout(props) {
   return (
-    <div>
-      <h1 className={classes.Header}>Products</h1>
-      {props.children}
+    <div className={classes.Header}>
+      <h1>Products</h1>
+      {props.show ? <h2>DONE</h2> : null}
     </div>
   );
 }

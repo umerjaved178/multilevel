@@ -8,9 +8,12 @@ function Test1(props) {
     <div className={classes.SelectionComp}>
       <p>Subcategories</p>
       <div>
-        <Selection options={props.options} />
+        <Selection
+          options={props.options}
+          handletempDataChange={props.handletempDataChange}
+        />
       </div>
-      <AddButton buttonText="Sub Category" />
+      <AddButton buttonText="Sub Category" storeResult={props.storeResult} />
     </div>
   );
 }
