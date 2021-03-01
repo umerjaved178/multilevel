@@ -2,9 +2,9 @@ import classes from "./Parent.module.css";
 import React from "react";
 import { useState } from "react";
 import { data } from "../Data";
-import AddButton from "./AddButton/AddButton";
-import List from "./List/List";
-import Modal from "./Modal/Modal";
+import AddButton from "../components/UI/AddButton/AddButton";
+import List from "../components/List/List";
+import Modal from "../components/UI/Modal/Modal";
 
 const categories = [];
 const subCategories = [];
@@ -12,8 +12,8 @@ const subCategories = [];
 function Parent(props) {
   const [category, setcategory] = useState(data);
   const [tempData, settempData] = useState([]);
-  const [catLen, setcatLen] = useState(categories.length);
-  const [subcatLen, setsubcatLen] = useState(subCategories.length);
+  const [ , setcatLen] = useState(categories.length);
+  const [ , setsubcatLen] = useState(subCategories.length);
   const [showModal, setShowModal] = useState(false);
 
   const handletempDataChange = (selectedOptions) => {
@@ -60,8 +60,6 @@ function Parent(props) {
         addCategory="addCategory"
         storeCategories={storeCategory}
       />
-      {console.log("cat", categories)}
-      {console.log("subCat", subCategories)}
       {arrayLength ? (
         <div className={classes.Done} onClick={modalToggle}>
           Done

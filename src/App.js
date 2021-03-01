@@ -1,6 +1,6 @@
 import "./App.css";
-import Layout from "./components/Layout/Layout";
-import Parent from "./components/Parent";
+import Layout from "./components/UI/Layout/Layout";
+import Parent from "./containers/Parent";
 
 function App() {
   return (

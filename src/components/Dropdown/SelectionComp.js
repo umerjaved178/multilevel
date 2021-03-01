@@ -1,7 +1,7 @@
 import React from "react";
 import Selection from "./SelectUILibrary/SelectUI";
 import classes from "./SelectionComp.module.css";
-import AddButton from "../AddButton/AddButton";
+import AddButton from "../UI/AddButton/AddButton";
 
 function Test1(props) {
   return (
