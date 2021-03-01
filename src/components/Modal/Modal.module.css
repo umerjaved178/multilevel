@@ -1,0 +1,36 @@
+.Modal {
+  display: block;
+  background-color: #ccc;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.Back {
+  cursor: pointer;
+  border: 1px solid beige;
+  display: block;
+  width: 10%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.Back:hover {
+  background-color: red;
+  color: white;
+}
+
+.Save {
+  padding: 10px 30px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.Save:hover {
+  background-color: rgb(165, 165, 165);
+}
+
+.Save:active {
+  background-color: rgb(128, 127, 127);
+}

@@ -120,28 +120,28 @@ export const data = {
       },
     ],
   },
-  "Robotic Arms": {
-    dropped: false,
-    subCategory: [
-      { label: "Robotic Arms 2-A", value: "Robotic Arms 2-A" },
-      { label: "Robotic Arms 2-B", value: "Robotic Arms 2-B" },
-      { label: "Robotic Arms 2-C", value: "Robotic Arms 2-C" },
-    ],
-  },
-  "Production Enery": {
-    dropped: false,
-    subCategory: [
-      { label: "Production Enery 2-A", value: "Production Enery 2-A" },
-      { label: "Production Enery 2-B", value: "Production Enery 2-B" },
-      { label: "Production Enery 2-C", value: "Production Enery 2-C" },
-    ],
-  },
-  "Sensors Multilevel": {
-    dropped: false,
-    subCategory: [
-      { label: "Sensors Multilevel 2-A", value: "Sensors Multilevel 2-A" },
-      { label: "Sensors Multilevel 2-B", value: "Sensors Multilevel 2-B" },
-      { label: "Sensors Multilevel 2-C", value: "Sensors Multilevel 2-C" },
-    ],
-  },
+  // "Robotic Arms": {
+  //   dropped: false,
+  //   subCategory: [
+  //     { label: "Robotic Arms 2-A", value: "Robotic Arms 2-A" },
+  //     { label: "Robotic Arms 2-B", value: "Robotic Arms 2-B" },
+  //     { label: "Robotic Arms 2-C", value: "Robotic Arms 2-C" },
+  //   ],
+  // },
+  // "Production Enery": {
+  //   dropped: false,
+  //   subCategory: [
+  //     { label: "Production Enery 2-A", value: "Production Enery 2-A" },
+  //     { label: "Production Enery 2-B", value: "Production Enery 2-B" },
+  //     { label: "Production Enery 2-C", value: "Production Enery 2-C" },
+  //   ],
+  // },
+  // "Sensors Multilevel": {
+  //   dropped: false,
+  //   subCategory: [
+  //     { label: "Sensors Multilevel 2-A", value: "Sensors Multilevel 2-A" },
+  //     { label: "Sensors Multilevel 2-B", value: "Sensors Multilevel 2-B" },
+  //     { label: "Sensors Multilevel 2-C", value: "Sensors Multilevel 2-C" },
+  //   ],
+  // },
 };
