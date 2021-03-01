@@ -1,3 +1,4 @@
+import classes from "./Parent.module.css";
 import React from "react";
 import { useState } from "react";
 import { data } from "../Data";
@@ -48,7 +49,9 @@ function Parent(props) {
         addCategory="addCategory"
         storeCategories={storeCategory}
       />
-      {console.log(subCategories)}
+      {/* {categories.length + 1 > 1 || subCategories.length + 1 > 1 ? ( */}
+      <div className={classes.Done}>Done</div>
+      {/* ) : null} */}
     </div>
   );
 }
